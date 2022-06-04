@@ -12,7 +12,6 @@ const introdata = {
         third: "Problem Solver",
     },
     description: "Fullstack web developer from Georgia",
-    your_img_url: "https://gm1.ggpht.com/BIfOIT6XgkpVHNnF4oSTXgbfffg0VyGA1x2PB4cVlGlYkql8ry2OkqIoaWb8HFwXgkW-rmGrRqLUgoFkquU7XOZN4Cjia75_cBD2Gm-ix3zYR7U-nGSvIs5pHe1fRL-8OqFRLKkn91N2akN8EStk_25JXcd_WS_629JmH7Qv9OlwHzDomAZh0LHoWyhIFDkW5NX9B9OEmV2d9xqbTt6jsHiXWmFAS0sSL1fc6wNALNbQ4Jmw1pOLYMms0GsejC1Cn4HXvp6TzKjqi20VVl_6iE0aq7fh7D1mwaHtGoxutrHuyVavDAdV0dFSNrR9iGGzgdvjxmbUjCsrvxggxzDmQHG3iGCheXIkJtwA2LpWMJz1Pi3d4vVjsORsi8KZBuDMyEkw_bzERAafvG9PzG1K7Aal700jIZZFx2UxOhruhK_yKp42BpxgsPn60mKqozRjt6b0gCC7p1aXVdnmPn-ShB8lt9-F2qN0SIwGf9KsaSWgWXXTvTSBoO3U8ihnWDuIip47xe-8LmZVxwsXqluq8cp23OIrSSiZ1MibuFDKeAO1Cxsg4WFBVcaR2OrZna4fFrxQfQ62V2DuXsSI4XMI9k9yyNpJElTZPbIFvdlrgQ9llmNBR8ONWy_OdPf4WezVo7apAWmLsCBeO1tED6zHCT4JgVU-mGUHTME3Tv4RvikE5emq7NpVFGG8iXiSvjGidKm8sxrqDEsvtC3WoZ-vQezs42qPH8R9d-PKy9b7_Z9-Sl_Cv9AznrYkma0KDYrDn8prhgvkioY707TV=s0-l75-ft-l75-ft",
 };
 
 const dataabout = {
@@ -53,23 +52,28 @@ const services = [{
     }
 ];
 
-const dataportfolio = [{
-        img: "https://picsum.photos/400/?grayscale",
-        name:"Gunda bar",
-        desctiption: "e-commerce website for ice cream shop, built with laravel/livewire alpineJS and TailwindCSS",
-        link: "#",
-    },
+const dataportfolio = [
     {
-        img: "https://picsum.photos/400/800/?grayscale",
+        img: "image-detector",
         name:"Image detector",
         desctiption: "static website built with react, lets you detect faces and food from the image.",
-        link: "#",
+        link: "https://achiugulava.github.io/image-detector/",
+        GHlink:"https://github.com/AchiUgulava/image-detector",
     },
     {
-        img: "https://picsum.photos/400/?grayscale",
+        img: "cream-bar",
+        name:"Cream bar",
+        desctiption: "e-commerce website for ice cream shop with multiple language support, built with laravel alpineJS and TailwindCSS",
+        link: "https://cream-bar.herokuapp.com/",
+        GHlink:"https://github.com/AchiUgulava/Gunda",
+
+    },
+    {
+        img: "users-app",
         name:"Search user",
         desctiption: "static website built with react, lets you search through the users",
-        link: "#",
+        link: "https://achiugulava.github.io/users-app/",
+        GHlink:"https://github.com/AchiUgulava/users-app",
     },
 ];
 
