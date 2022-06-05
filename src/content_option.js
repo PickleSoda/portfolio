@@ -16,7 +16,7 @@ const introdata = {
 
 const dataabout = {
     title: "about me",
-    aboutme: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies.",
+    aboutme: "I have a creative mind and am always up for new challenges.  One of my strongest skills is problem solving. I enjoy setting and achieving personal goals, so I work well in groups as well as alone. I have excellent communication and listening skills.",
 };
 
 
@@ -80,9 +80,9 @@ const dataportfolio = [
 const contactConfig = {
     YOUR_EMAIL: "achiugulava@gmail.com",
     description: "get in touch with me",
-    YOUR_SERVICE_ID: "service_id",
-    YOUR_TEMPLATE_ID: "template_id",
-    YOUR_USER_ID: "user_id",
+    YOUR_SERVICE_ID: "service_eiw6xg2",
+    YOUR_TEMPLATE_ID: "template_zs3hrh9",
+    YOUR_USER_ID: "hxEU4d3fNIEo7mDyL",
 };
 
 const socialprofils = {
