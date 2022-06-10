@@ -3,9 +3,7 @@ import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
 import { dataportfolio, meta } from "../../content_option";
-import {
-  FaGithub,FaDoorOpen
-} from "react-icons/fa";
+import { FaGithub, FaDoorOpen } from "react-icons/fa";
 export const Portfolio = () => {
   return (
     <HelmetProvider>
@@ -26,24 +24,51 @@ export const Portfolio = () => {
             return (
               <Row key={i} className="po_row">
                 <Col>
-                <div className="po_item">
-                <img src={`./images/${data.img}.jpg`} alt="" className="po_img" />
-                <div className="content">
-                  <a href={data.link}><FaDoorOpen size={70}/></a>
-                  <a href={data.GHlink}><FaGithub size={70}/></a>
-                </div>
-                </div>
-              </Col>
-              <Col>
-                <div className="po_desc">
-                <h2>{data.name}</h2>
-                  <p>{data.desctiption}</p>
-                  <a href={data.link}>view project</a>
-                  <a href={data.GHlink}>view Git</a>
-                </div>
-              </Col>
+                  <div className="po_item">
+                    <img
+                      src={`./images/${data.img}.jpg`}
+                      alt=""
+                      className="po_img"
+                    />
+                    <div className="content">
+                      <a
+                        href={data.link}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                      >
+                        <FaDoorOpen size={70} />
+                      </a>
+                      <a
+                        href={data.GHlink}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                      >
+                        <FaGithub size={70} />
+                      </a>
+                    </div>
+                  </div>
+                </Col>
+                <Col>
+                  <div className="po_desc">
+                    <h2>{data.name}</h2>
+                    <p>{data.desctiption}</p>
+                    <a
+                      href={data.link}
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      view project
+                    </a>
+                    <a
+                      href={data.GHlink}
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      view Git
+                    </a>
+                  </div>
+                </Col>
               </Row>
-              
             );
           })}
         </div>

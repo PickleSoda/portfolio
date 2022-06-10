@@ -5,7 +5,7 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import { meta } from "../../content_option";
 import { Container, Row, Col, Alert } from "react-bootstrap";
 import { contactConfig, socialprofils } from "../../content_option";
-import { FaFacebookF, FaLinkedin,} from "react-icons/fa";
+import { FaFacebookF, FaLinkedin } from "react-icons/fa";
 export const ContactUs = () => {
   const [formData, setFormdata] = useState({
     email: "",
@@ -110,10 +110,16 @@ export const ContactUs = () => {
               )}
             </address>
             <div className="socials">
-            <a href={socialprofils.facebook}>Facebook<FaFacebookF/></a>
+              <a href={socialprofils.facebook}>
+                Facebook
+                <FaFacebookF />
+              </a>
             </div>
             <div className="socials">
-            <a href={socialprofils.linkedin}>linkedin<FaLinkedin/></a>
+              <a href={socialprofils.linkedin}>
+                linkedin
+                <FaLinkedin />
+              </a>
             </div>
           </Col>
           <Col lg="7" className="d-flex align-items-center">
