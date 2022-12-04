@@ -4,6 +4,7 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
 import { dataportfolio, meta } from "../../content_option";
 import { FaGithub, FaDoorOpen } from "react-icons/fa";
+import Typewriter from "typewriter-effect";
 export const Portfolio = () => {
   return (
     <HelmetProvider>
@@ -15,7 +16,18 @@ export const Portfolio = () => {
         </Helmet>
         <Row className="mb-5 mt-3">
           <Col lg="8">
-            <h1 className="display-4 mb-4"> Portfolio </h1>{" "}
+            <h1 className="display-4 mb-4">
+              <Typewriter
+                options={{
+                  delay: 80,
+                  autoStart: true,
+                  deleteSpeed: 10,
+                  strings: "Projects",
+                  typeSpeed: 100,
+                  cursor: null,
+                }}
+              />
+            </h1>
             <hr className="t_border my-4 ml-0 text-left" />
           </Col>
         </Row>
@@ -36,14 +48,14 @@ export const Portfolio = () => {
                         target="_blank"
                         rel="noreferrer noopener"
                       >
-                        <FaDoorOpen size={70} />
+                        <FaDoorOpen className="po_icon" size={70} />
                       </a>
                       <a
                         href={data.GHlink}
                         target="_blank"
                         rel="noreferrer noopener"
                       >
-                        <FaGithub size={70} />
+                        <FaGithub className="po_icon" size={70} />
                       </a>
                     </div>
                   </div>

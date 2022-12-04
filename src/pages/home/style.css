@@ -14,7 +14,9 @@ section {
 .has-first-color {
     color: var(--primary-color);
 }
-
+.mb-1x{
+    margin-bottom: 20px;
+}
 .btn-portfolio {
     background: var(--primary-color);
     border-radius: 0;
@@ -100,7 +102,6 @@ section {
 .intro_sec .h_bg-image {
     background-size: cover;
     background-position: center;
-    min-height: 700px;
     position: relative;
 }
 
@@ -204,7 +205,6 @@ section {
 @media (max-width:991.98px) {
     .intro_sec .h_bg-image {
         height: 600px;
-        min-height: 75vh;
         margin-bottom: 30px;
     }
     .intro_sec .h_bg-image .block {

@@ -4,6 +4,7 @@ import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { meta } from "../../content_option";
 import { Container, Row, Col, Alert } from "react-bootstrap";
+import Typewriter from "typewriter-effect";
 import { contactConfig, socialprofils } from "../../content_option";
 import { FaFacebookF, FaLinkedin } from "react-icons/fa";
 export const ContactUs = () => {
@@ -74,7 +75,16 @@ export const ContactUs = () => {
         </Helmet>
         <Row className="mb-5 mt-3">
           <Col lg="8">
-            <h1 className="display-4 mb-4">Contact</h1>
+            <h1 className="display-4 mb-4"><Typewriter
+                    options={{
+                      delay:80,
+                      autoStart: true,
+                      deleteSpeed: 10,
+                      strings: "Contact",
+                      typeSpeed: 100,
+                      cursor:null
+                    }}
+                  /></h1>
             <hr className="t_border my-4 ml-0 text-left" />
           </Col>
         </Row>
@@ -111,14 +121,14 @@ export const ContactUs = () => {
             </address>
             <div className="socials">
               <a href={socialprofils.facebook}>
-                Facebook
                 <FaFacebookF />
+                Facebook
               </a>
             </div>
             <div className="socials">
               <a href={socialprofils.linkedin}>
-                linkedin
                 <FaLinkedin />
+                linkedin
               </a>
             </div>
           </Col>

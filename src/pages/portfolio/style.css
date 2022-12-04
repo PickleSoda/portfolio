@@ -11,6 +11,7 @@
   position: relative;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   flex-wrap: wrap;
   padding: 6px;
 }
@@ -77,10 +78,14 @@
 .po_item .content a {
   width: 70%;
   height: 70px;
+  margin: 0 30px;
 }
 
 .po_item .content a:hover {
   text-decoration: none;
+}
+.po_item .content a:hover .po_icon{
+  color: rgb(27, 24, 24);
 }
 .po_desc {
   position: relative;

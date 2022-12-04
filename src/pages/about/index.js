@@ -2,7 +2,8 @@ import React from "react";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
-import { dataabout, meta, skills, services } from "../../content_option";
+import Typewriter from "typewriter-effect";
+import { dataabout, meta, skills, services,skilldesc } from "../../content_option";
 
 export const About = () => {
   return (
@@ -15,7 +16,18 @@ export const About = () => {
         </Helmet>
         <Row className="mb-5 mt-3">
           <Col lg="8">
-            <h1 className="display-4 mb-4">About me</h1>
+          <h1 className="display-4 mb-4">
+          <Typewriter
+                    options={{
+                      delay:80,
+                      autoStart: true,
+                      deleteSpeed: 10,
+                      strings: "About me",
+                      typeSpeed: 100,
+                      cursor:null
+                    }}
+                  />
+            </h1>
             <hr className="t_border my-4 ml-0 text-left" />
           </Col>
         </Row>
@@ -25,6 +37,7 @@ export const About = () => {
           </Col>
           <Col lg="7" className="d-flex align-items-center">
             <div>
+            
               <p>{dataabout.aboutme}</p>
             </div>
           </Col>
@@ -33,6 +46,9 @@ export const About = () => {
         <Row className="sec_sp">
           <Col lg="5">
             <h3 className="color_sec py-4">Skills</h3>
+            <p>
+              {skilldesc.desc}
+            </p>
           </Col>
           <Col lg="7">
             {skills.map((data, i) => {

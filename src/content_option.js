@@ -7,9 +7,9 @@ const meta = {
 const introdata = {
   title: "I’m Achi Ugulava",
   animated: {
-    first: "Web Developer",
-    second: "Coding For Fun",
-    third: "Problem Solver",
+    first: "Full-Stack Developer",
+    second: "Vue and React on Front",
+    third: "PHP on Back",
   },
   description: "Fullstack web developer from Georgia",
 };
@@ -17,43 +17,41 @@ const introdata = {
 const dataabout = {
   title: "about me",
   aboutme:
-    "I have a creative person and am always up for new challenges. I am comfortable working with MVC pattern and performing CRUD operations. I also have experience with dom manipulation on the front end.  One of my strongest skills is problem solving. I enjoy setting and achieving personal goals, so I work well in groups as well as alone. I have excellent communication and listening skills.",
+    "   Began writing code in C++ when I was 14 years old. Although I'm physically active person, problem solving is one of my strong suits, its the reason I love programming. I'm comfortable working with MVC and MVVM architectue patterns. I've tried a lot of programming languages and frameworks, but so far, Laravel and Vue are my favourites.",
 };
 
 const skills = [
   {
-    name: "PHP",
-    info: "understanding of MVC pattern and CRUD operations, able to work with sql databases",
+    name: "Laravel",
     value: 90,
   },
   {
-    name: "laravel",
-    value: 90,
+    name: "Magneto",
+    value: 60,
   },
   {
-    name: "Javascript",
+    name: "Vue",
     value: 80,
   },
   {
     name: "React",
-    value: 60,
-  },
-  {
-    name: "css",
-    value: 80,
-  },
+    value: 70,
+  }
 ];
+const skilldesc = {
+desc:"I'm not even shure what this kind of skill graphs represent but made one anyways."
+}
 
 const services = [
   {
     title: "Front end",
     description:
-      "comfortable with CSS frameworks:tailwindCSS and bootstrap , knowledge of JS and basic understanding of React.",
+      "Working experience with Vue JS, Done some projects on my own with React. Worked with wide range of styling tools: Bootstrap, Tailwind, Scss, Less",
   },
   {
     title: "Back End",
     description:
-      "knowledge of PHP-Laravel framework , basics of node.JS-Express.JS .",
+      "knowledge of PHP - Magento and Laravel. Basic understanding of Express.JS.",
   },
 ];
 
@@ -101,6 +99,7 @@ export {
   dataabout,
   dataportfolio,
   skills,
+  skilldesc,
   services,
   introdata,
   contactConfig,
