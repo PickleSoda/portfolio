@@ -32,6 +32,7 @@ export function generateMetadata({ params }: WorkParams) {
 		images,
 		image,
 		team,
+		links,
 	} = post.metadata
 	let ogImage = image
 		? `https://${baseURL}${image}`
@@ -60,6 +61,7 @@ export function generateMetadata({ params }: WorkParams) {
 			description,
 			images: [ogImage],
 		},
+		links,
 	}
 }
 
