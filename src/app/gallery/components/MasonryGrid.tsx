@@ -18,7 +18,7 @@ export default function MasonryGrid() {
             breakpointCols={breakpointColumnsObj}
             className={styles.masonryGrid}
             columnClassName={styles.masonryGridColumn}>
-            {gallery.images.map((image, index) => (
+            {gallery.images.map((image : { alt: string; src: string , width:number, height: number, orientation: string}, index) => (
                 <SmartImage
                     key={index}
                     radius="m"
