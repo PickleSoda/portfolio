@@ -62,7 +62,7 @@ const about = {
     intro: {
         display: true,
         title: 'Introduction',
-        description: <>I'm a Georgia-based software developer with experience in web development, ML and data science. Proficient in multiple programming languages and frameworks, delivering high-performance, scalable applications. Working effectively both independently and collaboratively. Passionate about coding, often engaging in personal projects during free time. Experienced in writing code that follows solid principles and design patterns.
+        description: <>I'm a Georgia-based software developer with experience in web development, ML and data science. Proficient in multiple programming languages and frameworks, delivering high-performance, scalable applications. Working effectively both independently and collaboratively. Passionate about coding, often engaging in personal projects during free time, winner in multiple hackathons, and participated in many more. Experienced in writing code that follows solid principles and design patterns.
 </>
     },
     work: {
@@ -74,6 +74,7 @@ const about = {
                 timeframe: 'Aug 2023 - Present',
                 role: 'Software Developer',
                 achievements: [
+                    <>Created multiple startups in a team of 4 developers with over 50k users, involved in every step of the design, development, anddeployment process.</>,
                     <>Developed AI-driven projects, primarily chatbot-based widgets and dashboards to monitor company growth. Integrated analytics software and custom methods for effective user data capture and interpretation.</>,
                     <>Implemented generative AI solutions using LangChain and Neo4j, as well as custom ML models.</>,
                     <>Transformed critical data insights into actionable strategies, significantly improving marketing effectiveness and project performance.</>
@@ -87,7 +88,6 @@ const about = {
                 achievements: [
                     <>Integrated Vue Storefront with Magento and Shopware platforms to enhance the online shopping experience, resulting in a 15% increase in customer satisfaction.</>,
                     <>Created custom modules for both backend and frontend to meet clients' desires.</>,
-                    <>Optimized the development process by compiling and monitoring applications locally using Docker and Kubernetes, reducing deployment time by 25%.</>,
                     <>Collaborated with cross-functional teams using Agile methodologies to ensure high performance and optimized user experiences.</>
                 ],
                 images: [ ]
