@@ -1,0 +1,82 @@
+---
+title: "Skhivi - NLP Analysis of Georgian Media Space"
+publishedAt: "2024-10-12"
+summary: "Contributed to the development and optimization of Skhivi, an NLP-based platform analyzing the Georgian media space. Improved website performance by 3x through bug fixes and best practices. Currently assisting with ongoing development and optimization."
+images:
+  - "/images/projects/skhivi/cover-01.png"
+  - "/images/projects/skhivi/cover-02.png"
+team:
+  - name: "Achi Ugulava"
+    role: "Full-stack Developer"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/yourprofile/"
+links:
+  - title: "Visit Skhivi"
+    href: "https://Skhivi.com"
+---
+
+Visit the Website at [**skhivi.com**](https://skhivi.com/)
+
+## Overview
+
+Skhivi (The Beam) is a platform that employs modern natural language processing methods to analyze the Georgian media space. The algorithms developed for Skhivi analyze the information space without any human intervention, providing unbiased insights into media coverage trends.
+
+I joined the project two weeks before its launch, focusing on identifying and fixing bugs and performance issues. By following best practices for the provided tools and implementing server-side rendering (SSR), I achieved a 3x increase in loading speed. I am currently continuing to assist with website development.
+
+## Methodology
+
+For the analysis of the Georgian media space, our team uses modern methods of natural language processing. The algorithms we have created analyze the information space without any human intervention.
+
+In this section of the methodology, we will attempt to explain the processes behind **Skhivi** (The Beam) in detail.
+
+### Article Grouping
+
+To visually represent different perspectives on the same event, we use a two-step process:
+
+#### a) Semantic Encoding
+
+Articles are placed in a high-dimensional space (in this image, it is reduced to three dimensions).
+
+Using a language model (such as **BERT**, **GPT**, or **RoBERTa**), each article is transformed into a high-dimensional vector. This process is called semantic encoding, and it transforms the nuances of the article's content into a format suitable for computational processing. As a result of semantic encoding, each article is represented as a point in a high-dimensional mathematical space (typically 300–1000 dimensions). The location of this point reflects semantic information: articles with similar content are placed closer together in this space. For example, an article about a football match will likely be near other sports articles but far from political articles. This mathematical representation allows us to evaluate the similarity between articles based on their content, not just on the use of keywords.
+
+#### b) Grouping (Clustering)
+
+Once the high-dimensional semantic representation is created, similar articles are grouped together. In machine learning, this grouping process is called "clustering." Specifically, **Skhivi** uses a density-based clustering algorithm called **HDBSCAN**.
+
+HDBSCAN works as follows:
+
+- It identifies regions in the high-dimensional space where articles are densely located.
+- It then creates a hierarchy of potential clusters based on the density of points.
+- From this hierarchy, the most stable clusters are extracted.
+
+### Media Coverage Spectrum
+
+The **Skhivi** spectrum is calculated without any human intervention.
+
+#### Data Collection
+
+Our system analyzes hundreds of thousands of articles from more than 50 sources.
+
+#### Grouping of Stories
+
+Articles from each day are grouped through the clustering process described in the "Article Grouping" section.
+
+#### Counting Coverage Overlap Among Media Sources
+
+We calculate how many times different outlets covered the same story. This information is used to create a square matrix N, where the element N<sub>ij</sub> describes the number of stories outlets *i* and *j* covered together (i.e., how often they were placed in the same cluster). The matrix is normalized by considering the frequency of publications.
+
+#### Spectrum Creation
+
+Using **Principal Component Analysis (PCA)**, we identify the main axis of variation, which, in our case, matches the subjective assessment of media coverage trends. This process is called "dimensionality reduction."
+
+---
+
+**Prepared with the financial support of the European Union and co-financed by the Federal Ministry for Economic Cooperation and Development of Germany. The content of this material is the responsibility of the hackathon-winning team "Open Evidence" and does not reflect the views of the European Union or the Federal Ministry of Germany.**
+
+
+## Challenges and Learnings
+
+- **Performance Optimization**: Onboarded two weeks before the launch and sprinted to fix bugs and performance issues, resulting in a 3x faster loading speed.
+- **Best Practices Implementation**: Applied best practices for the provided tools and SSR to enhance website performance and user experience.
+- **Ongoing Development**: Currently assisting with website development, further optimizing features and performance.
+- **NLP Integration**: Gained experience in integrating complex NLP algorithms into a live platform, managing data pipelines, and ensuring scalability.
