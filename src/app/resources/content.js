@@ -9,7 +9,7 @@ const person = {
     role:      'Software Developer',
     avatar:    '/images/avatar.jpg',  // Update the path if necessary
     location:  'Asia/Tbilisi',        // IANA time zone identifier for Georgia
-    languages: ['English', 'Georgian', 'Russian']
+    languages: ['English', 'Georgian']
 }
 
 const newsletter = {
@@ -70,25 +70,38 @@ const about = {
         title: 'Work Experience',
         experiences: [
             {
-                company: 'Vaya Studios',
-                timeframe: 'Aug 2023 - Present',
-                role: 'Software Developer',
+                company: 'Global VAT Compliance',
+                timeframe: 'Feb 2025 - Current',
+                role: 'Middle Software Developer',
                 achievements: [
-                    <>Created multiple startups in a team of 4 developers with over 50k users, involved in every step of the design, development, anddeployment process.</>,
-                    <>Developed AI-driven projects, primarily chatbot-based widgets and dashboards to monitor company growth. Integrated analytics software and custom methods for effective user data capture and interpretation.</>,
-                    <>Implemented generative AI solutions using LangChain and Neo4j, as well as custom ML models.</>,
-                    <>Transformed critical data insights into actionable strategies, significantly improving marketing effectiveness and project performance.</>
+                    <>Led the migration of internal tooling from Vue 2 to Vue 3, modernizing the frontend architecture while preserving core CRM functionality.</>,
+                    <>Rebuilt the workflow engine visualization from scratch using VueFlow and Vue 3, delivering it as a standalone platform for improved maintainability and user experience.</>,
+                    <>Optimized Redis queue scheduling for workflow execution, resolving race conditions that caused duplicate workflow runs.</>,
+                    <>Contributing to the architectural separation of the workflow execution engine from the monolithic Laravel API into an independent service, improving scalability.</>
+                ],
+                images: [ ]
+            },
+            {
+                company: 'Vaya Studios',
+                timeframe: 'Aug 2023 - Sep 2024',
+                role: 'Middle Software Developer',
+                achievements: [
+                    <>Created multiple startups in a team of 4 developers with over 50k users, involved in every step of the design, development, and deployment process.</>,
+                    <>Developed web initiatives to create AI-driven projects, primarily chatbot-based widgets and dashboards to monitor company growth, integrating analytics software and custom methods for effective user data capture and interpretation.</>,
+                    <>Implemented generative AI solutions using LangChain and vector databases as well as custom ML models.</>,
+                    <>Transformed critical data insights into actionable strategies, contributing significantly to informed decision-making processes for marketing and project performance.</>
                 ],
                 images: [ ]
             },
             {
                 company: 'Developers Alliance',
-                timeframe: 'Jun 2022 - Aug 2023',
-                role: 'Software Developer',
+                timeframe: 'May 2022 - Aug 2023',
+                role: 'Junior Software Developer',
                 achievements: [
-                    <>Integrated Vue Storefront with Magento and Shopware platforms to enhance the online shopping experience, resulting in a 15% increase in customer satisfaction.</>,
-                    <>Created custom modules for both backend and frontend to meet clients' desires.</>,
-                    <>Collaborated with cross-functional teams using Agile methodologies to ensure high performance and optimized user experiences.</>
+                    <>Integrated Vue Storefront with Magento and Shopware platforms to enhance the online shopping experience.</>,
+                    <>Created custom modules for both the backend and frontend to meet clients desires.</>,
+                    <>Compiled and monitored applications using Docker, optimizing the development process.</>,
+                    <>Collaborated with cross-functional teams to ensure high performance and optimized user experiences.</>
                 ],
                 images: [ ]
             }
