@@ -72,7 +72,7 @@ const about = {
             {
                 company: 'Global VAT Compliance',
                 timeframe: 'Feb 2025 - Current',
-                role: 'Middle Software Developer',
+                role: 'Senior Software Developer',
                 achievements: [
                     <>Led the migration of internal tooling from Vue 2 to Vue 3, modernizing the frontend architecture while preserving core CRM functionality.</>,
                     <>Rebuilt the workflow engine visualization from scratch using VueFlow and Vue 3, delivering it as a standalone platform for improved maintainability and user experience.</>,
@@ -82,9 +82,31 @@ const about = {
                 images: [ ]
             },
             {
-                company: 'Vaya Studios',
+                company: 'Bingle AI Agency',
+                timeframe: 'Oct 2025 - Present',
+                role: 'Full-Stack AI Engineer',
+                achievements: [
+                    <>Built and deployed a production voice agent on Vapi integrated into a live telephone line for appointment handling.</>,
+                    <>Designed prompts, authored context documents, and implemented custom tools plus MCP integrations for external scheduling workflows.</>,
+                    <>Developed the booking MCP server to support real-time availability checks and booking confirmation flows.</>
+                ],
+                images: [ ]
+            },
+            {
+                company: 'Open Evidence (Skhivi)',
+                timeframe: 'Oct 2024 - Jan 2025',
+                role: 'Full-Stack Developer',
+                achievements: [
+                    <>Contributed to the Skhivi NLP media-analysis platform and improved performance through targeted fixes and optimization.</>,
+                    <>Applied SSR and engineering best practices to improve loading speed and overall reliability.</>,
+                    <>Supported delivery and post-launch improvements for the Georgian media-space analysis product.</>
+                ],
+                images: [ ]
+            },
+            {
+                company: 'Vaya Dev',
                 timeframe: 'Aug 2023 - Sep 2024',
-                role: 'Middle Software Developer',
+                role: 'Software Developer',
                 achievements: [
                     <>Created multiple startups in a team of 4 developers with over 50k users, involved in every step of the design, development, and deployment process.</>,
                     <>Developed web initiatives to create AI-driven projects, primarily chatbot-based widgets and dashboards to monitor company growth, integrating analytics software and custom methods for effective user data capture and interpretation.</>,

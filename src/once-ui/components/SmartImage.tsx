@@ -73,7 +73,9 @@ const SmartImage: React.FC<SmartImageProps> = ({
         };
     };
 
-    const isVideo = src.endsWith('.mp4');
+    const source = typeof src === 'string' ? src : '';
+    const hasSource = source.length > 0;
+    const isVideo = source.toLowerCase().endsWith('.mp4');
 
     return (
         <>
@@ -101,9 +103,9 @@ const SmartImage: React.FC<SmartImageProps> = ({
                 {isLoading && (
                     <Skeleton shape="block" />
                 )}
-                {!isLoading && isVideo && (
+                {!isLoading && hasSource && isVideo && (
                     <video
-                        src={src}
+                        src={source}
                         autoPlay
                         loop
                         muted
@@ -115,16 +117,19 @@ const SmartImage: React.FC<SmartImageProps> = ({
                         }}
                     />
                 )}
-                {!isLoading && !isVideo && (
+                {!isLoading && hasSource && !isVideo && (
                     <Image
                         {...props}
-                        src={src}
+                        src={source}
                         alt={alt}
                         fill
                         style={{ 
                             objectFit: isEnlarged ? 'contain' : objectFit,
                         }}
                     />
+                )}
+                {!isLoading && !hasSource && (
+                    <Skeleton shape="block" />
                 )}
             </Flex>
 
@@ -152,9 +157,9 @@ const SmartImage: React.FC<SmartImageProps> = ({
                             transform: 'translate(-50%, -50%)',
                         }}
                         onClick={(e) => e.stopPropagation()}>
-                        {isVideo ? (
+                        {hasSource && isVideo ? (
                             <video
-                                src={src}
+                                src={source}
                                 autoPlay
                                 loop
                                 muted
@@ -165,15 +170,17 @@ const SmartImage: React.FC<SmartImageProps> = ({
                                     objectFit: 'contain',
                                 }}
                             />
-                        ) : (
+                        ) : hasSource ? (
                             <Image
                                 {...props}
-                                src={src}
+                                src={source}
                                 alt={alt}
                                 fill
                                 sizes="90vw"
                                 style={{ objectFit: 'contain' }}
                             />
+                        ) : (
+                            <Skeleton shape="block" />
                         )}
                     </Flex>
                 </Flex>
