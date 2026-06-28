@@ -1,0 +1,58 @@
+---
+
+title: "History Mapped - Interactive Historical Atlas"
+publishedAt: "2026-06-28"
+summary: "Built an interactive historical atlas and editorial platform for mapping entities, events, relationships, and time-aware geography. Architected a monorepo combining a Laravel backend with an Inertia admin surface, a React customer SPA, and a Python pipeline that ingests data from Wikidata and OpenHistoricalMap into a PostGIS + pgvector database."
+images:
+  - "/images/projects/history-mapped/cover-01.png"
+  - "/images/projects/history-mapped/cover-02.png"
+team:
+  - name: "Achi Ugulava"
+    role: "Full-Stack Engineer"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/achi-ugulava-38282a202/"
+links:
+  - title: "Visit History Mapped"
+    href: "https://historymapped.org"
+  - title: "View on GitHub"
+    href: "https://github.com/PickleSoda/history-mapped"
+
+---
+
+Visit History Mapped at [**historymapped.org**](https://historymapped.org)
+
+## Overview
+
+History Mapped is an interactive historical atlas and editorial platform for mapping entities, events, relationships, and time-aware geography. It lets users explore how political entities, borders, and historical events relate to one another across both space and time.
+
+The project is built as a monorepo that brings together three distinct surfaces: a Laravel backend and Inertia-powered admin panel, a standalone React customer SPA, and a Python data pipeline that ingests and processes historical data from Wikidata and OpenHistoricalMap. The data is stored in PostgreSQL with PostGIS for geospatial queries and pgvector for semantic search and embeddings.
+
+## Key Features
+
+- **Time-Aware Geography**: Models historical borders and entities as they change over time, enabling exploration of geography at any point in history.
+- **Entity & Relationship Mapping**: Captures political entities, events, and the relationships between them, surfaced through a rich admin tooling layer with maps, timelines, and reference tables.
+- **Wikidata Ingestion**: A Python pipeline scrapes and deduplicates entities and topics from Wikidata and Wikipedia, then stages them for import into the application.
+- **OpenHistoricalMap Borders Pipeline**: A staged fetch, parse, enrich, build, and relation-generation workflow that imports historical borders from OpenHistoricalMap into the platform.
+- **Semantic Search**: pgvector-backed embeddings power semantic lookups across the historical entity model.
+- **Admin Editorial Surface**: An Inertia + React admin UI for curating entities, relationships, and references, served directly from Laravel.
+
+## Technologies Used
+
+- **Laravel 13 / PHP 8.4**: Powers the REST API (`/api/v1`), queue workers, scheduler, and the Inertia-based admin panel.
+- **React 19 + Vite**: Drives both the Inertia admin frontend and the standalone customer SPA, with TanStack Query and Axios for data fetching.
+- **PostgreSQL 16 + PostGIS + pgvector**: Provides relational storage, geospatial queries for borders and geography, and vector search for embeddings.
+- **Python Data Pipeline**: A CLI for Wikidata/Wikipedia scraping, topic extraction, and staged OpenHistoricalMap borders processing.
+- **Docker Compose**: Orchestrates the full local stack including Nginx, Redis, Mailpit, CloudBeaver, and RedisInsight.
+- **Inertia.js**: Bridges the Laravel backend and React admin without a separate API layer for admin tooling.
+
+## Challenges and Learnings
+
+The central challenge was modeling geography and political entities that change over time—borders shift, states form and dissolve, and relationships evolve across centuries. Representing this cleanly required careful schema design and leaning on PostGIS for geospatial accuracy.
+
+Building a reliable ingestion pipeline was equally demanding. Wikidata and OpenHistoricalMap data is large, inconsistent, and interrelated, so the pipeline was designed as a series of staged steps—fetch, parse, enrich, build, and resolve relationships—each independently resumable to handle the scale of a global import.
+
+Coordinating three surfaces in a single monorepo, each with its own runtime and dependencies, reinforced the value of containerized development and clear boundaries between the API, admin, customer web, and pipeline layers.
+
+## Outcome
+
+History Mapped delivers a working platform for exploring history through an interactive, time-aware map. The combination of a robust Laravel backend, a curated admin editorial surface, and an automated ingestion pipeline makes it possible to continuously grow the dataset while keeping the geography and relationships consistent and queryable.
